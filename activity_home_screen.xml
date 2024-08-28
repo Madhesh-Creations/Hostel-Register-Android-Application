@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/allcorn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/std_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/stdinside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/std_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Inside Lock"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/std_inside"
+                app:layout_constraintStart_toStartOf="@+id/std_inside"
+                app:layout_constraintTop_toBottomOf="@+id/std_inside" />
+
+            <ImageView
+                android:id="@+id/std_outside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/stdout"
+                app:layout_constraintEnd_toEndOf="@+id/std_inside"
+                app:layout_constraintStart_toStartOf="@+id/std_inside"
+                app:layout_constraintTop_toBottomOf="@+id/std_txt" />
+
+            <TextView
+                android:id="@+id/stdot_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Outside Lock"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/std_outside"
+                app:layout_constraintStart_toStartOf="@+id/std_outside"
+                app:layout_constraintTop_toBottomOf="@+id/std_outside" />
+
+            <ImageView
+                android:id="@+id/std_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/stdadmin"
+                app:layout_constraintEnd_toEndOf="@+id/std_outside"
+                app:layout_constraintStart_toStartOf="@+id/std_outside"
+                app:layout_constraintTop_toBottomOf="@+id/stdot_txt" />
+
+            <TextView
+                android:id="@+id/std_adtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Admin Login"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/std_admin"
+                app:layout_constraintStart_toStartOf="@+id/std_admin"
+                app:layout_constraintTop_toBottomOf="@+id/std_admin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
